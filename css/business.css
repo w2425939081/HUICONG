@@ -1,0 +1,563 @@
+body {
+    font: 12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;
+    color: #333;
+    font-family: "MicroSoft YaHei" !important;
+}
+*{margin:0px;padding:0px;border:0px;}
+.center{
+    width:1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.clear{
+    clear:both;
+}
+header{
+    z-index: 999;}
+header .center{
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 90px;
+}
+nav .topLeft{
+    width: 270px;
+    height: 90px;
+    float: left;
+    background: url("../images/mmtIco.png") no-repeat 0px 20px;
+}
+nav .topLeft a.logo{
+    display: block;
+    width: 170px;
+    height: 90px;
+}
+nav .topRight{
+    width: 440px;
+    height: 90px;
+    float: right;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    padding: 0 5px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 90px;
+    margin-left: 21px;
+    position: relative;
+    transition: all .35s;
+}
+nav ul li.active a{
+    color: #0c76f4;
+    padding-bottom: 13px;;
+    text-decoration: none;
+}
+nav ul li.active a:after{
+    opacity: 1;
+}
+nav ul li a:hover{
+    color: #0c76f4;
+    padding-bottom: 13px;;
+    text-decoration: none;
+}
+nav ul li a:hover:after{
+    opacity: 1;
+}
+nav ul li a:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    border-bottom: 2px solid #0c76f4;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+section{
+    position: relative;
+    z-index: -2;
+}
+.mmtBanner {
+    background: url('../images/mmtIndexBanner.gif') center center;
+    height: 380px;
+    border-top: 1px solid #d8d8d8;
+}
+.mmtBannerCon {
+    height: 380px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.mmtBannerCon ul {
+    position: absolute;
+    overflow: hidden;
+    height: 380px;
+    left: -1349px;
+    width: 2698px;
+}
+.mmtBannerCon ul li {
+    height: 380px;
+    float: left;
+    width: 50%;
+}
+
+.bannerBg1 {
+    background: url('../images/mmtIndexBanner.gif') center center;
+}
+.bannerBg2 {
+    background: url('../images/banner2.jpg') center center;
+}
+.mmtBannerCon ul li a {
+    display: block;
+    height: 380px;
+    width: 100%;
+}
+
+.mmtBanner .btnNew {
+    position: absolute;
+    height: 14px;
+    text-align: center;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+}
+.mmtBanner .btnNew span {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin: 0 5px;
+    border: 1px solid #0c76f4;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #0c76f4;
+}
+
+.mmtBannerRigBg {
+    background: #000;
+    opacity: 0.2;
+    position: absolute;
+    right: 100px;
+    top: 30px;
+    width: 310px;
+    height: 310px;
+    z-index: 4;
+}
+.mmtBannerRigBox {
+    background: #fff;
+    position: absolute;
+    top: 35px;
+    right: 105px;
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+    z-index: 6;
+}
+.mmtBannerRigBox i {
+    display: block;
+    height: 85px;
+    width: 85px;
+    margin: 40px auto 10px;
+    background: url('../images/mmtIndexIco.png') no-repeat 0px 0px;
+}
+.mmtBannerRigBox p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+.mmtBannerRigBox a {
+    display: block;
+    height: 34px;
+    width: 200px;
+    margin: 35px auto 0;
+    font-size: 16px;
+    color: #fff;
+    background: #0c76f4;
+    text-align: center;
+    line-height: 34px;
+}
+.mmtBannerRigBox a:hover{
+    text-decoration: none;
+}
+article,.mmtBoxOne{
+    width: 100%;
+    height: auto;
+}
+.mmtBoxOne1 h1{
+    width: 1200px;
+    text-align: center;
+    height: 50px;
+    padding: 50px 0px 0px;
+    font-size: 25px;
+    color: #333;
+    margin: 0 auto;
+}
+.minLine{
+    display: block;
+    height: 4px;
+    width: 50px;
+    margin: 10px auto 40px;
+    background: #0c76f4;
+}
+.mmtBoxOne2{
+    width: 1200px;
+    height: 200px;
+}
+.mmtBoxOne2 ul li.Ico1,.mmtBoxOne2 ul li.Ico2,.mmtBoxOne2 ul li.Ico3{
+    float: left;
+    height: 178px;
+    width: 378px;
+    border: 1px solid #ebebeb;
+    margin: 0 10px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+.picIco1,.picIco2,.picIco3{
+    width: 130px;
+    height: 130px;
+    float: left;
+    margin: 20px 20px 0 25px;
+    background: url('../images/mmtIndexIco.png') no-repeat 0px 0px;
+}
+.picIco1{
+    background-position: -95px 0px;
+}
+.picIco2{
+    background-position: -240px 0px;
+}
+.picIco3{
+    background-position: -390px 0px;
+}
+.Ico1 dl,.Ico2 dl,.Ico3 dl{
+    float: left;
+    margin-top: 30px;
+    width: 175px;
+}
+.Ico1 dt,.Ico2 dt,.Ico3 dt{
+    font-size: 18px;
+    color: #333;
+    line-height: 30px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.Ico1 dd,.Ico2 dd,.Ico3 dd{
+    font-size: 14px;
+    color: #666;
+    width: 175px;
+    line-height: 20px;
+    margin: 0;
+}
+.mmtBoxOne2 ul li.Ico1:hover,.mmtBoxOne2 ul li.Ico2:hover,.mmtBoxOne2 ul li.Ico3:hover{
+    box-shadow: 0 0 6px #0c76f4;
+}
+.mmtBoxTwo{
+    width: 100%;
+    height: 699px;
+    background: url("../images/Box2Bg.png")center center;
+    margin-top:30px; ;
+}
+.mmtBoxTwo1 h1{
+    width: 1200px;
+    text-align: center;
+    height: 50px;
+    padding: 50px 0px 0px;
+    font-size: 25px;
+    color: #fff;
+    margin: 0 auto;
+}
+.mmtBoxTwo1 .minLine{
+    display: block;
+    height: 4px;
+    width: 50px;
+    margin: 10px auto 40px;
+    background: #fff;
+}
+.mmtBoxTwo2 ul{
+    width: 102%;
+    overflow: hidden;
+    height: 350px;
+}
+.mmtBoxTwo2 ul li {
+    width: 200px;
+    padding: 0 50px;
+    float: left;
+}
+.mBox2Ico1, .mBox2Ico2, .mBox2Ico3, .mBox2Ico4 {
+    display: block;
+    width: 200px;
+    height: 220px;
+    background: url('../images/mmtIndexIco.png') no-repeat 0px 0px;
+    cursor: pointer;
+}
+.mmtBoxTwo2 ul li .mBox2Ico1 {
+    background-position: 3px -150px;
+}
+.mmtBoxTwo2 ul li .mBox2Ico2 {
+    background-position: -200px -150px;
+}
+.mmtBoxTwo2 ul li .mBox2Ico3 {
+    background-position: -403px -150px;
+}
+.mmtBoxTwo2 ul li .mBox2Ico4 {
+    background-position: -605px -150px;
+}
+.mmtBoxTwo2 ul li h3 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 12px;
+}
+.mmtBoxTwo2 ul li h3 b {
+    display: block;
+    height: 2px;
+    width: 28px;
+    margin: 8px auto 0;
+    background: #fff;
+}
+.mmtBoxTwo2 ul li p {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+.mmtBoxTwo2 ul li .mBox2Ico1:hover,.mmtBoxTwo2 ul li .mBox2Ico2:hover,.mmtBoxTwo2 ul li .mBox2Ico3:hover,.mmtBoxTwo2 ul li .mBox2Ico4:hover{
+    transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+
+    transition:all 1s ease 0.1s;
+    -moz-transition:all 1s ease 0.1s;
+    -webkit-transition:all 1s ease 0.1s;
+    -o-transition:all 1s ease 0.1s;
+}
+.mmtBoxTwo2 a.part {
+    display: block;
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 40px;
+    border: 2px solid #fff;
+    font-weight: bold;
+    margin: 60px auto 0;
+}
+
+/*第三个开始*/
+
+.mmtBoxThree{
+    width: 100%;
+    height: 570px;
+    margin-top:30px; ;
+}
+.mmtBoxThree1 h1{
+    width: 1200px;
+    text-align: center;
+    height: 50px;
+    padding: 50px 0px 0px;
+    font-size: 25px;
+    color: #333;
+    margin: 0 auto;
+}
+.mmtBoxThree1 .minLine{
+    display: block;
+    height: 4px;
+    width: 50px;
+    margin: 10px auto 40px;
+    background: #0c76f4;
+}
+
+
+
+.boxList {
+    float: left;
+    width: 198px;
+    height: 318px;
+    border: 1px solid #e5e5e5;
+    margin: 0 5px 0 0px;
+    padding: 20px 15px;
+    background: #fff;
+    position: relative;
+}
+.mmtBoxThree ul li i.boxListIco1{
+    display: block;
+    height: 45px;
+    width: 45px;
+    margin: 0 auto;
+    background: url('../images/mmtIndexIco.png') -620px 5px;
+}
+.mmtBoxThree ul li .boxListIco2 {
+    display: none;
+}
+.boxList i.boxListIco2 {
+    height: 34px;
+    width: 34px;
+    position: absolute;
+    right: -17px;
+    top: 165px;
+    background: url('../images/mmtIndexIco.png') -549px 0px;
+}
+.boxList dl {
+    height: 155px;
+    overflow: hidden;
+}
+.boxList dl dt.line60 {
+    line-height: 48px;
+}
+.boxList dt {
+    height: 48px;
+    line-height: 24px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    padding: 12px 0 20px;
+}
+.boxList dd {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+.boxList i.boxListIco3{
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: 25px auto 0;
+    background: url('../images/mmtIndexIco.png') no-repeat 2px -430px;
+}
+.boxListWord{
+    float: left;
+    padding: 115px 25px 0 35px;
+    color: #333;
+    line-height: 34px;
+    font-size: 14px;
+    width: 184px;
+    display: none;
+}
+.mmtBoxThree ul li.cur .boxList{
+    background: #0c76f4;
+    color:#fff;
+}
+.mmtBoxThree ul li.cur .boxList dt,.mmtBoxThree ul li.cur .boxList dd{
+    color: #fff;
+}
+.mmtBoxThree ul li.cur .boxListWord{
+    display: block;
+}
+.mmtBoxThree ul li.cur .boxListIco2{
+    display: block;
+}
+.mmtBoxThree ul li.cur {
+    cursor: pointer;
+}
+.mmtBoxThree ul li.cur{
+    float: left;
+    -webkit-transition: all .3s ease .1s;
+    -moz-transition: all .3s ease .1s;
+    -o-transition: all .3s ease .1s;
+    transition: all .3s ease .1s;
+}
+.mmtBoxThree ul li.cur{
+    -webkit-box-shadow: 0 0 18px rgba(12, 118, 224, .4);
+    -moz-box-shadow: 0 0 18px rgba(12, 118, 224, .4);
+    box-shadow: 0 0 18px rgba(12, 118, 224, .4);
+}
+.mmtBoxThree ul li.cur{
+    width: 480px;
+    background: #fff;
+    margin-right: 5px;
+    margin-top: -10px;        /*向上的动作*/
+}
+/*第三个结束*/
+
+
+.mmtBoxFour{
+    background: url('../images/mBotBg.png') center center;
+    height: 468px;
+    margin-top:30px; ;
+}
+.mmtBoxFour1 h1{
+    width: 1200px;
+    text-align: center;
+    height: 50px;
+    padding: 50px 0px 0px;
+    font-size: 25px;
+    color: #fff;
+    margin: 0 auto;
+}
+.mmtBoxFour1 .minLine{
+    display: block;
+    height: 4px;
+    width: 50px;
+    margin: 10px auto 40px;
+    background: #fff;
+}
+.mmtBoxFour ul {
+    overflow: hidden;
+    padding: 45px 25px 0;
+    margin: 0 auto;
+    width: 1140px;
+}
+.mmtBoxFour ul li {
+    float: left;
+    margin-left: 65px;
+    width: 470px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    padding-left: 32px;
+    background: url(http://b2b.hc360.com/intro/images/new/mmtIndexIco.png) no-repeat 0 0;
+}
+.mmtBoxFour ul li a{
+    color: #333;
+    text-decoration: none;
+    margin:0 6px;
+}
+.mmtBoxFour ul li a:hover{
+    color:#0c76f4;
+}
+.mmtBoxFour ul li.fourIco1 {
+    background-position: -825px 9px;
+}
+
+/*底部开始*/
+footer{
+    width: 980px;
+    line-height: 20px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #999;
+    padding: 40px 0 30px 0;
+    text-align: center;
+}
+footer ul{
+    width: 980px;
+    height: 20px;
+    margin: 0 auto;
+    padding-left: 140px;
+}
+footer ul li{
+    float: left;
+}
+footer ul li a,footer p a{
+    color:#999;
+}
+footer ul li a:hover,footer p a:hover{
+    color:#dd2726;
+}
+/*底部结束*/

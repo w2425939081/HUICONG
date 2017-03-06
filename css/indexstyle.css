@@ -1,0 +1,1638 @@
+*{margin: 0;padding:0;border:0;}
+ul{list-style: none;}
+a{text-decoration: none;color:#000;}
+body {
+    font: 12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;
+    color: #333;
+    margin:0 auto;
+}
+.active{
+	color:#dd2726;
+}
+a:hover{
+	color:red;
+	text-decoration: underline;
+}
+/*标题栏开始*/
+header{
+	line-height: 30px;
+    height: 30px;
+    border-bottom: 1px solid #f2f2f2;
+    background: #f9f9f9;
+}
+.center{
+	width: 1200px;
+	height: 30px;
+	margin: 0 auto;
+	position: relative;
+}
+.top-left,.top-right{
+	width: 400px;
+	height: 30px;
+	float: left;
+	font-size: 12px;
+	color: #666;
+}
+.top-right{
+	width: 800px;
+	float: right;
+}
+.Mobile{
+	width: 60px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	left:0px;
+}
+.mobile{
+	width: 60px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	left:0px;
+}
+a.mobile span:hover{
+	text-decoration: underline;
+}
+.mobile span{
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 20px;
+}
+.phone{
+	display: inline-block;
+	width: 20px;
+	height: 30px;
+	background: url('../images/indexpic.png') no-repeat -474px -292px;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.mobile .triangle{
+	border-color: #bbb transparent transparent;
+    border-style: solid dashed dashed;
+    border-width: 3px;
+    position: absolute;
+    top:15px;
+    left:66px;
+}
+.top-left .shu{
+	float: left;
+    border-left: 1px solid #e6e6e6;
+    display: inline-block;
+    height: 14px;
+    position: absolute;
+    top:8px;
+	left:86px;
+}
+.top-left p{
+	padding-left: 100px;
+	float: left;
+}
+/*这个小三角星的做法，就是先做出来两个小菱形，然后让背景的
+菱形大于上面的菱形，用来制作边框，然后通过z-index，让它们处在不同的层，
+然后通过叠加就出现了有边框的三角形的效果*/
+.top-left .Mobile .white-triangle em{
+	margin-top: -16px;
+    color: #fff;
+    font-style: normal;
+    position: absolute;
+    z-index: 5;
+    top:31px;
+    left: 31px;
+    display: none;
+}
+.top-left .Mobile .white-triangle span{
+	display: none;
+    width: 30px;
+    height: 16px;
+    color:#e5e6e6;
+    font-size: 30px;
+    position: absolute;
+    top:18px;
+    left:22px;
+    z-index: 2;
+}
+/*hover部分开始*/
+.top-left .Mobile:hover .mob,.top-left .Mobile:hover em,.top-left .Mobile:hover span{
+	display: block;
+}
+
+.top-left .Mobile:hover .mobile .triangle{
+	/*border-color: transparent transparent #bbb ;
+    border-style: dashed dashed solid;
+    border-width: 3px;*/
+    -moz-transition: all 0.1s ease-in-out; 
+	-webkit-transition: all 0.1s ease-in-out; 
+	-o-transition: all 0.1s ease-in-out; 
+	-ms-transition: all 0.1s ease-in-out; 
+	transition: all 0.1s ease-in-out; 
+    -moz-transform: rotate(180deg); 
+	-webkit-transform: rotate(180deg); 
+	-o-transform: rotate(180deg); 
+	-ms-transform: rotate(180deg); 
+	transform: rotate(180deg); 
+	
+}
+.top-left .mob{
+	position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 248px;
+    height: 160px;
+    background: #fff;
+    border: 1px solid #e5e6e6;
+    z-index: 3;
+    display: none;
+}
+p.MobHC{
+	overflow: hidden;
+	width: 100%;
+    height: 28px;
+    color: #787878;
+    border-bottom: 1px solid #efefef;
+    padding: 0px 0px 0px 20px;
+    line-height: 28px;
+}
+.mob .Mobcont i{
+	display: inline-block;
+	width: 115px;
+	height: 110px;
+	background: url('../images/sevpic.png') no-repeat 0px -322px; 
+	position: absolute;
+	top:40px;
+	left:10px;
+}
+.mob .Mobcont p{
+	padding: 0px;
+	display: block;
+	width: 88px;
+	height: 54px;
+	position: absolute;
+	top:40px;
+	left: 140px;
+}
+.mob .Mobcont a{
+	display: block;
+	width: 100px;
+	height: 24px;
+	background: url('../images/sevpic.png') no-repeat -315px -10px;
+	position: absolute;
+	bottom:38px;
+	right:6px;
+}
+.mob .Mobcont a.one{
+	background-position: -315px -10px;
+	bottom:38px;
+}
+.mob .Mobcont a.two{
+	background-position: -430px -10px;
+	bottom: 10px;
+}
+
+/*hover部分结束*/
+
+
+
+
+
+
+.top-left .login{
+	padding-left: 24px;
+	font-size: 12px;
+	color: #666;
+}
+.top-left .login:hover{
+	color: #dd2726;
+}
+.top-left .register{
+	padding-left: 8px;
+	font-size: 12px;
+	color: #dd2726;
+}
+.top-left .register:hover{
+	text-decoration: underline;
+}
+.top-left a.PC,.top-left a.chahao{
+	display: inline-block;
+	width: 150px;
+	height: 20px;
+	line-height: 20px;
+	color:#f6f6f6;
+	border-radius:5px 0px 0px 5px;
+	background: #dd2726;
+	position: absolute;
+	top:30px;
+	left: 250px;
+}
+.top-left a.PC:hover,.top-left a.chahao:hover{
+	text-decoration: none;
+}
+.top-left a.chahao{
+	width: 16px;
+	line-height: 20px;
+	text-align: center;
+	border-radius:0px 5px 5px 0px;
+	left:400px;
+}
+.top-left .red-triangle{
+	width: 6px;
+	height: 6px;
+	color:#dd2726;
+	font-style: normal;
+	position: absolute;
+	top:15px;
+	left: 263px;
+}
+.top-right ul{
+	float: right;
+}
+.top-right ul li,.top-right ul li.small{
+	width: 75px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.top-right ul li.small{
+	width: 65px;
+}
+.top-right ul li.lishu{
+	width: 1px;
+	float: left;
+	border-left: 1px solid #e6e6e6;
+    display: inline-block;
+    height: 14px;
+    position: relative;
+    top:8px;
+    left:3px;
+}
+.top-right ul li a{
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	
+}
+.top-right ul li a i.triangle,.top-right ul li.small a i.triangle{
+	border-color: #bbb transparent transparent;
+    border-style: solid dashed dashed;
+    border-width: 3px;
+    position: absolute;
+    top:15px;
+    right:5px;
+}
+.one,.two,.three,.four,.five,.six,.seven{
+	z-index: 2;
+}
+.one-1{
+	width: 200px;
+	height: 190px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -1px;
+	z-index: 1;
+	display: none;
+}
+.one-1 ul{
+	width: 100px;
+	height: 190px;
+	float: left;
+	text-align: left; 
+}
+.one-1 ul h3{
+	margin-top: 6px;
+	padding-left: 10px;
+	color: #333;
+}
+.one-1 ul li a{
+	display: inline-block;
+	width: 76px;
+	height: 28px;
+	line-height: 28px;
+	text-align: left;
+	padding-left: 10px;
+}
+.two-1{
+	width: 170px;
+	height: 170px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -1px;
+	z-index: 1;
+	display: none;
+}
+.two-1 ul li{
+	width: 160px;
+	height: 32px;
+	float: left;
+	text-align: left; 
+}
+.two-1 ul li a{
+	display: inline-block;
+	width: 150px;
+	height: 32px;
+	line-height: 32px;
+	text-align: left;
+	padding-left: 20px;
+}
+.two-1 ul p{
+	text-align: left;
+	padding-left: 20px;
+	color: #333;
+}
+.three-1{
+	width: 170px;
+	height: 60px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -1px;
+	z-index: 1;
+	display: none;
+}
+.three-1 a{
+	display: inline-block;
+	width: 150px;
+	height: 20px;
+	line-height: 20px;
+	text-align: left;
+	padding-left: 20px;
+}
+.three-1 p{
+	text-align: left;
+	padding-left: 20px;
+	color: #333;
+}
+.four-1{
+	width: 120px;
+	height: 180px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -1px;
+	z-index: 1;
+	display: none;
+}
+.four-1 ul li {
+	width: 120px;
+	height: 30px;
+}
+.four-1 ul li a{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	padding-left: 20px;
+}
+.four-1 i.ewm{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: url('../images/sevpic.png')no-repeat -8px -228px;
+	position: absolute;
+	top:90px;
+	left: 20px;
+}
+
+.five-1{
+	width: 220px;
+	height: 430px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -1px;
+	z-index: 1;
+	display: none;
+}
+.five-1 h3,.seven-1 h3{
+	color: #333;
+	text-align: left;
+	padding-left: 10px;
+}
+.five-1 a,.seven a{
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	text-align: left;
+	float: left;
+	padding-left: 10px;
+}
+.six-1{
+	width: 75px;
+	height: 120px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -1px;
+	z-index: 1;
+	display: none;
+}
+.six-1 a{
+	width: 75px;
+}
+.seven-1{
+	width: 220px;
+	height: 340px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -148px;
+	z-index: 1;
+	display: none;
+}
+/*标题栏hover开始*/
+.top-right ul li.one:hover,
+.top-right ul li.two:hover,
+.top-right ul li.three:hover,
+.top-right ul li.four:hover,
+.top-right ul li.five:hover,
+.top-right ul li.six:hover,
+.top-right ul li.seven:hover{
+	width: 73px;
+	background: #fff;
+	border-left:1px solid #e5e6e6;
+	border-right:1px solid #e5e6e6;
+}
+.top-right ul li.three:hover{
+	width: 63px;
+}
+.top-right ul li.one:hover .triangle,
+.top-right ul li.two:hover .triangle,
+.top-right ul li.three:hover .triangle,
+.top-right ul li.four:hover .triangle,
+.top-right ul li.five:hover .triangle,
+.top-right ul li.six:hover .triangle,
+.top-right ul li.seven:hover .triangle{
+	-moz-transition: all 0.1s ease-in-out; 
+	-webkit-transition: all 0.1s ease-in-out; 
+	-o-transition: all 0.1s ease-in-out; 
+	-ms-transition: all 0.1s ease-in-out; 
+	transition: all 0.1s ease-in-out; 
+    -moz-transform: rotate(180deg); 
+	-webkit-transform: rotate(180deg); 
+	-o-transform: rotate(180deg); 
+	-ms-transform: rotate(180deg); 
+	transform: rotate(180deg); 
+}
+.top-right ul li.one:hover .one-1,
+.top-right ul li.two:hover .two-1,
+.top-right ul li.three:hover .three-1,
+.top-right ul li.four:hover .four-1,
+.top-right ul li.five:hover .five-1,
+.top-right ul li.six:hover .six-1,
+.top-right ul li.seven:hover .seven-1{
+	display: block;
+}
+.one-1 a:hover,.two-1 a:hover,.three-1 a:hover,.four-1 a:hover,.five-1 a:hover,.six-1 a:hover,.seven-1 a:hover{
+	background: #dd2726;
+	color:#fff;
+}
+/*标题栏hover结束*/
+/*标题栏结束*/
+
+/*导航栏开始*/
+nav{
+	height:115px;
+	background: #f6f6f6;
+	padding-top: 20px;
+}
+nav .left{
+	width: 180px;
+	height: 85px;
+	display: inline-block;
+	background: url('../images/indexicon.png') no-repeat 0px -116px;
+}
+nav .left img{
+	padding-left: 180px;
+	padding-top:10px; 
+}
+nav .right{
+	width: 830px;
+	height: 85px;
+	float: right;
+	position: relative;
+}
+nav .right ul li{
+	width: 40px;
+	height: 12px;
+	text-align: center;
+	float: left;
+}
+nav .right ul li.shu{
+	float: left;
+    border-left: 1px solid #e6e6e6;
+    display: inline-block;
+    height: 14px;
+    width: 1px;
+    position: relative;
+    top:2px;
+	left:2px;
+}
+nav .right ul li a{
+	font-size: 12px;
+	color:#666;
+}
+nav .right ul li a.active{
+	font-size: 12px;
+	color:#dd2726;
+}
+nav .right input,.touming input{
+	width: 480px;
+	height: 36px;
+	border:2px solid #d6d6d6;
+	position: absolute;
+	top:20px;
+	left: 0px;
+    outline: none;
+}
+/*nav .right input:hover{
+	border:2px solid #dd2726;
+}*/
+nav .right .xiala,.touming .xiala{
+	width: 478px;
+	height: 0px;
+	border:2px solid #dd2726;
+	position: absolute;
+	top:60px;
+	left:0px;
+	background: #fff;
+	border-top: none;
+	z-index: 6;
+	display: none;
+}
+nav .right .xiala p,.touming .xiala p{
+	width: 400px;
+	height: 60px;
+	margin: 30px 0px 0px 39px;
+}
+nav .right .xiala p a,.touming .xiala p a{
+	display: inline-block;
+	padding: 10px 10px 0px 0px;
+}
+
+nav .right a.search,.touming a.search{
+	width: 100px;
+	height:40px;
+	color:#fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+	background: #dd2726;
+	position: absolute;
+	top:20px;
+	left:480px;
+}
+nav .right a.search:hover{
+	text-decoration: none;
+}
+/*bwzd标王直达*/
+nav .right a.bwzd{
+	display: inline-block;
+	width: 110px;
+	height: 38px;
+	color:#dd2726;
+	font-size: 12px;
+	border:1px solid #d6d6d6;
+	position: relative;
+	top:20px;
+	right:-490px;
+}
+nav .right a.bwzd span{
+	position: absolute;
+	top:10px;
+	right:20px;
+}
+nav .right a.bwzd i.huangguan{
+	display: inline-block;
+	width: 20px;
+	height: 14px;
+	position: absolute;
+	top:10px;
+	left:10px;
+	background: url('../images/indexicon.png') no-repeat 0px 0px;
+}
+/*在写js的时候要给这里一个点击事件*/
+nav a.erweima{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top:0px;
+	right:0px;
+	background: url('../images/indexicon.png') no-repeat -136px 0px;
+}
+/*透明区域开始*/
+.touming{
+	width: 100%;
+	height: 50px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.15);
+    background: #fff;
+    opacity: 0.95;
+    position: fixed;
+    z-index: 7;
+    top:0px;
+    display: none;
+}    
+.touming i.logo{
+	display: inline-block;
+	width: 130px;
+	height: 50px;
+	background: url('../images/indexicon.png') no-repeat -230px -30px;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.touming input{
+	height: 30px;
+	left: 300px; 
+	top:10px;
+}
+.touming a.search{
+	height: 34px;
+	line-height: 34px;
+	top:10px;
+	left:783px;
+	text-decoration: none;
+}
+.touming .xiala{
+	width: 480px;
+	top:44px;
+	left:300px;
+}
+.touming a.login,.touming a.register{
+    display: block;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #222;
+    position: absolute;
+    top:10px;
+    right:190px;
+    border:1px solid #d6d6d6;
+}
+.touming a.login:hover{
+	color:#dd2726;
+}
+.touming a.register{
+	right: 110px;
+	color:#dd2726;
+}
+/*下午任务把透明区域写完，然后写成滚动监听事件*/
+/*透明区域结束*/
+nav ul.dh{
+	width: 1200px;
+	height: 30px;
+	background: #dd2726;
+	margin-left: 0;
+	position: relative;
+}
+nav ul.dh li.title{
+	background-color: #c60a09;
+    color: #fff;
+    width: 190px;
+    height: 30px;
+}
+nav ul.dh li.title i.hyfl{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background: url('../images/indexicon.png') no-repeat -90px 8px;
+	top:0px;
+	left:10px;
+}
+nav ul.dh li.title span{
+	padding-left: 50px;
+	line-height: 30px;
+	font-size: 12px;
+}
+nav ul.dh li{
+	float: left;
+}
+nav ul.dh li a{
+    display: block;
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+nav ul.dh li a:hover{
+    text-decoration: none;
+}
+/*导航栏结束*/
+
+/*banner开始*/
+/*左侧边栏开始*/
+aside{
+	height: 514px;
+	position: relative;
+	float: left;
+	z-index: 2;
+}
+aside ul{
+	width: 190px;
+	height: 514px;
+	background: #f6f6f6;
+	border:1px solid #d6d6d6;
+	z-index: 3;
+}
+aside ul li{
+	width: 150px;
+	height: 31px;
+	font-size: 12px;
+	color:#666;
+	text-align:left;
+	line-height: 32px;
+	padding-left: 40px;
+	position: relative;
+	z-index: 3;
+}
+aside ul li i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top:5px;
+	left:10px;
+	background: url('../images/indexpic.png') no-repeat 0px 0px;
+}
+aside ul li i.huagong{
+	background-position: -386px -27px;
+}
+aside ul li i.anfang{
+	background-position: -386px -500px;
+}
+aside ul li i.dianzi{
+	background-position: -386px -59px;
+}
+aside ul li i.jiudian{
+	background-position: -386px -326px;
+}
+aside ul li i.wujin{
+	background-position: -386px -88px;
+}
+aside ul li i.fuzhuang{
+	background-position: -386px -116px;
+}
+aside ul li i.yinshua{
+	background-position: -386px -148px;
+}
+aside ul li i.jingshuiqi{
+	background-position: -386px -178px;
+}
+aside ul li i.kongtiao{
+	background-position: -386px -208px;
+}
+aside ul li i.qiche{
+	background-position: -386px -238px;
+}
+aside ul li i.shipin{
+	background-position: -386px -268px;
+}
+aside ul li i.jiadian{
+	background-position: -386px -298px;
+}
+aside ul li i.pige{
+	background-position: -386px -358px;
+}
+aside ul li i.gongcheng{
+	background-position: -386px -388px;
+}
+aside ul li i.guangdian{
+	background-position: -386px -418px;
+}
+aside ul li i.yinxiang{
+	background-position: -386px -448px;
+}
+aside .huagong1,aside .anfang1,aside .dianzi1{
+	width: 784px;
+	height: 512px;
+	background: #fff;
+	border:1px solid #d6d6d6;
+	position: absolute;
+	top:0px;
+	/*left:178px;*/
+	left: 182px;
+	z-index: 1;
+	display: none;
+}
+aside .huagong1 h2,aside .anfang1 h2,aside .dianzi1 h2{
+	padding: 12px 0px 8px 12px;
+	color:#dd2726;
+}
+aside .huagong1 h3,aside .anfang1 h3,aside .dianzi1 h3{
+	padding:0px 0px 8px 6px;
+	display: inline-block;
+	width: 380px;
+	height: 20px;
+	margin-left: 6px;
+	border-bottom:1px dashed #d6d6d6;
+}
+aside .huagong1 h3 a,aside .anfang1 h3 a,aside .dianzi1 h3 a{
+	font-size: 12px;
+	color: gray;
+	padding-left: 290px;
+}
+aside .huagong1 .one,aside .anfang1 .one,aside .dianzi1 .one{
+	width: 368px;
+	height: 60px;
+	margin-left: 12px;
+}
+aside .huagong1 .one a,aside .anfang1 .one a,aside .dianzi1 .one a{
+	margin-top: 6px;
+	margin-right: 19px;
+    float: left;
+    display: inline-block;
+    height: 24px;
+}
+
+/*左侧边栏结束*/
+/*中部轮播部分开始*/
+section{
+	width: 770px;
+	height: 506px;
+	padding: 10px 8px 0px 16px;
+	float: left;
+	background: #fff;
+	position: absolute;
+	left: 189px;
+}
+section .banner { position: relative; overflow: auto; text-align: center;z-index: 1;}
+section .banner ul{width:770px;height: 330px;overflow: hidden;position: relative;}
+section .banner li {width:770px;height: 330px; list-style: none; }
+section .banner ul li { float: left; }
+section #lunbo1 { width: 770px;}
+section #lunbo1 .dots { position: absolute; left: 0; right: 0; bottom: 20px;}
+section #lunbo1 .dots li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+section #lunbo1 .dots li.active
+{
+    background: #fff;
+    opacity: 1;
+}
+#lunbo1 .arrow { position: absolute; top: 150px; }
+#lunbo1 #al { left: 15px; display: none;}
+#lunbo1 #ar { right: 15px; display: none;}
+section .lunbo2{
+	width: 516px;
+	height: 166px;
+	float: left;
+	padding-top: 6px;
+	margin-right: 4px;
+}
+section .lunbo2-1 a{
+	display: inline-block;
+	width: 170px;
+	height: 166px;
+	padding-right:2px; 
+	float: left;
+}
+section .lunbo2-1 a p{
+	width: 170px;
+	height: 40px;
+	font-size: 12px;
+	line-height: 40px;
+	background: #eee; 
+	text-align:center;
+}
+section a.ad{
+	display: inline-block;
+	width: 250px;
+	height: 165px;
+	padding-top: 10px;
+}
+
+
+/*中部轮播部分结束*/
+
+
+/*右侧边栏开始*/
+#aside-right{
+	float: right;
+    width: 208px;
+    height: 503px;
+    border: 1px solid #e2e2e2;
+    margin-top: 10px;
+}
+#aside-right .login{
+	height:100px;
+}
+#aside-right .login a.small-logo{
+	display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background:url('../images/indexpic.png') no-repeat -188px 0px;
+    margin: 10px 0px 0px 30px;
+}
+#aside-right .login a.small-logo:hover{
+	background-position: -38px -356px;
+}
+#aside-right .login span{
+	display: inline-block;
+	margin:14px 0px 0px 10px; 
+}
+#aside-right .login p{
+	display: inline-block;
+	margin:6px 0px 6px 10px;
+}
+#aside-right .login a.left,#aside-right .login a.right{
+	display: inline-block;
+	width: 63px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	color:#dd2726;
+	background:#f8f8f8;
+	border-top: 1px solid #e2e2e2; 
+	border-bottom: 1px solid #e2e2e2;
+	float: left; 
+	margin-top: 6px;
+	text-align: left;
+	padding-left: 40px;
+	position: relative;
+}
+#aside-right .login a.left{
+	width: 62px;
+	border-right:1px solid #e2e2e2;
+	color:#333;
+}
+#aside-right .login a.left i.login,#aside-right .login a.right i.register{
+	display: inline-block;
+	width: 20px;
+	height: 30px;
+	position: absolute;
+	background: url('../images/indexpic.png') no-repeat -474px -396px;
+	top:8px;
+	left:10px;
+}
+#aside-right .login a.right i.register{
+	background-position: -472px -434px;
+}
+#aside-right ul{
+	height: 176px;
+	padding:10px; 
+	border-bottom: 1px dashed #e2e2e2;
+}
+#aside-right ul h3{
+	padding:20px 0px 10px; 
+}
+#aside-right ul li{
+	width: 188px;
+	height: 24px;
+	line-height: 24px;
+	color:#f6f6f6;
+	text-align: center;
+    overflow: hidden;
+}
+#aside-right .threepic{
+	height: 100px;
+	border-bottom:1px solid #e2e2e2;
+	padding: 10px 15px;
+	position: relative;
+}
+#aside-right .threepic a{
+	width: 56px;
+    height: 33px;
+    display: inline-block;
+    background:#f8f8f8;
+    border-radius: 8px; 
+    padding-top: 35px;
+    text-align: center;
+    line-height: 33px;
+    position: relative;
+}
+
+#aside-right .threepic a i{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top:6px;
+	left:13px;	background:url('../images/indexicon.png') no-repeat -98px -200px; 
+}   
+#aside-right .threepic a i:hover{
+	background-position: -98px -237px;
+}
+#aside-right .threepic a i.dingyue{
+	background-position: -140px -200px;
+}
+#aside-right .threepic a i.dingyue:hover{
+	background-position: -140px -237px;
+}
+#aside-right .threepic a i.bangni{
+	background-position: -182px -200px;
+}
+#aside-right .threepic a i.bangni:hover{
+	background-position: -182px -237px;
+}
+#aside-right .threepic a.word{
+	width: 208px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	padding: 0px;
+	background: none;
+	position: absolute;
+	bottom:10px;
+	left:0px;
+}
+#aside-right .threepic a.word span{
+	color:#dd2726;
+}
+#aside-right .jiedan{
+	height: 40px;
+	background: url('../images/indexicon.png') no-repeat 44px -80px;
+	border-bottom: 1px solid #e2e2e2;
+}
+#aside-right .tubiao{
+    clear: both;
+    height: 44px;
+    line-height: 44px;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+#aside-right .tubiao a{
+	display: inline-block;
+	width: 30px;
+	height: 44px;
+	padding-left: 28px;
+	position: relative;
+}
+#aside-right .tubiao a.fourword{
+	width: 50px;
+}
+#aside-right .tubiao a i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../images/indexicon.png') no-repeat -364px -140px;
+	position: absolute;
+	top:12px;
+	left:4px;
+}
+#aside-right .tubiao a i.jiaoyi{
+	background-position: -364px -167px;
+}
+#aside-right .tubiao a i.renzheng{
+	background-position: -364px -194px;
+}
+/*右侧边栏结束*/
+
+/*中部的底部链接开始*/
+#link{
+	clear: both;
+	height: 60px;
+}
+#link .left,#link .middle,#link .right{
+	width: 399px;
+	height: 40px;
+	margin:30px 0px;
+	float: left;
+}
+#link .left span,#link .middle span,#link .right span{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	font-size: 14px;
+	border-right:1px dashed #e2e2e2;
+	float: left;
+}
+#link .left p,#link .middle p,#link .right p{
+	width: 350px;
+	height: 16px;
+	float: left;
+}
+#link .left p a,#link .middle p a,#link .right p a{
+	padding: 4px 12px;
+	float: left;
+}
+
+/*中部的底部链接结束*/
+
+/*banner结束*/
+
+
+/*中部内容开始*/
+#element{
+	clear: both;
+	width: 100%;
+	height:auto;
+	background: #f5f5f5;
+	padding:20px 0px; 
+}
+#element .center{
+	width: 1200px;
+	height:auto;
+}
+.F1,.F2,.F3,.F4,.F5,.F6{
+	height: 380px;
+	overflow: hidden;
+	border:1px solid #e5e5e5;
+	margin-bottom: 30px;
+}
+.F1-one,.F1-one a.img,.F2-one,.F2-one a.img,
+.F3-one,.F3-one a.img,.F4-one,.F4-one a.img,
+.F5-one,.F5-one a.img,.F6-one,.F6-one a.img
+{
+	width: 260px;
+	height: 380px;	
+	position: relative;
+	float: left;
+    overflow: hidden;
+
+	transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+}
+.img:hover{
+	transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.F1-one p,.F2-one p,.F3-one p,.F4-one p,
+.F5-one p,.F6-one p
+{
+	display: block;
+	width: 200px;
+	height: 40px;
+	text-align: left;
+	padding: 10px;
+	background: rgba(255,255,255,0.5);
+	position: absolute;
+	bottom:20px;
+	left:20px;
+}
+.F1-one p a,.F2-one p a,.F3-one p a,.F4-one p a,
+.F5-one p a,.F6-one p a
+{
+	padding: 2px;
+}
+.F1-two,.F2-two,.F3-two,.F4-two,
+.F5-two,.F6-two
+{
+	width: 489px;
+	height: 380px;
+	border-right:1px solid #e5e5e5;
+	background: #fff;
+	float: left;
+}
+.F1-two-top,.F2-two-top,.F3-two-top,.F4-two-top,
+.F5-two-top,.F6-two-top
+{
+	height: 60px;
+	line-height: 60px;
+	border-bottom:1px dashed #e5e5e5;
+}
+.F1-two-top h2,.F2-two-top h2,.F3-two-top h2,.F4-two-top h2,
+.F5-two-top h2,.F6-two-top h2
+{
+	color:#333;
+}
+.F1-two-top h2 span,.F2-two-top h2 span,.F3-two-top h2 span,.F4-two-top h2 span,
+.F5-two-top h2 span,.F6-two-top h2 span
+{
+	padding-left: 20px;
+	color:#dd2726;
+}
+.F1-two-1,.F1-two-2,.F1-two-3,.F1-two-4,.F2-two-1,.F2-two-2,.F2-two-3,.F2-two-4,
+.F3-two-1,.F3-two-2,.F3-two-3,.F3-two-4,.F4-two-1,.F4-two-2,.F4-two-3,.F4-two-4,
+.F5-two-1,.F5-two-2,.F5-two-3,.F5-two-4,.F6-two-1,.F6-two-2,.F6-two-3,.F6-two-4
+{
+	width: 200px;
+	height: 118px;
+	padding: 20px;
+	float: left;
+}
+.F1-two-1 p,.F1-two-2 p,.F1-two-3 p,.F1-two-4 p,.F2-two-1 p,.F2-two-2 p,.F2-two-3 p,.F2-two-4 p,
+.F3-two-1 p,.F3-two-2 p,.F3-two-3 p,.F3-two-4 p,.F4-two-1 p,.F4-two-2 p,.F4-two-3 p,.F4-two-4 p,
+.F5-two-1 p,.F5-two-2 p,.F5-two-3 p,.F5-two-4 p,.F6-two-1 p,.F6-two-2 p,.F6-two-3 p,.F6-two-4 p
+{
+	width: 200px;
+	height: 80px;
+}
+.F1-two-1 p a,.F1-two-2 p a,.F1-two-3 p a,.F1-two-4 p a,.F2-two-1 p a,.F2-two-2 p a,.F2-two-3 p a,.F2-two-4 p a,
+.F3-two-1 p a,.F3-two-2 p a,.F3-two-3 p a,.F3-two-4 p a,.F4-two-1 p a,.F4-two-2 p a,.F4-two-3 p a,.F4-two-4 p a,
+.F5-two-1 p a,.F5-two-2 p a,.F5-two-3 p a,.F5-two-4 p a,.F6-two-1 p a,.F6-two-2 p a,.F6-two-3 p a,.F6-two-4 p a
+{
+	display: inline-block;
+	margin: 10px 16px 0px 0px;
+}
+.F1-three,a.top,a.left,a.right,.F2-three,a.top,a.left,a.right,
+.F3-three,a.top,a.left,a.right,.F4-three,a.top,a.left,a.right,
+.F5-three,a.top,a.left,a.right,.F6-three,a.top,a.left,a.right{
+	background: #fff;
+	float: left;
+}
+.F1-three,.F2-three,.F3-three,.F4-three,.F5-three,.F6-three{
+	width: 357px;
+	height: 380px;
+}
+.F1-three a.left,.F1-three a.right,.F2-three a.left,.F2-three a.right,
+.F3-three a.left,.F3-three a.right,.F4-three a.left,.F4-three a.right,
+.F5-three a.left,.F5-three a.right,.F6-three a.left,.F6-three a.right
+{
+	border-top:1px solid #e5e5e5;
+}
+.F1-three a.left,.F2-three a.left,.F3-three a.left,.F4-three a.left,
+.F5-three a.left,.F6-three a.left{
+	border-right: 1px solid #e5e5e5;
+}
+.F1-four,.F2-four,.F3-four,.F4-four,.F5-four,.F6-four{
+	width: 71px;
+	height: 380px;
+	background: #fff;
+	float: left;
+	padding: 0px 10px
+}
+.F1-four ul li,.F2-four ul li,
+.F3-four ul li,.F4-four ul li,
+.F5-four ul li,.F6-four ul li{
+	width: 71px;
+	height: 50px;
+	text-align: center;
+	padding-top:10px; 
+	border-bottom:1px dashed #e5e5e5;
+}
+.F1-four ul li:nth-child(6),.F2-four ul li:nth-child(6),
+.F3-four ul li:nth-child(6),.F4-four ul li:nth-child(6),
+.F5-four ul li:nth-child(6),.F6-four ul li:nth-child(6){
+	border: 0px;
+}
+
+/*商学院部分开始*/
+
+.business{
+	width: 1160px;
+	height: 550px;
+	background: #fff;
+	padding:20px; 
+}
+.business-left{
+	width: 470px;
+	height: 550px;
+	float: left;
+}
+.business-left h2{
+	width: 60px;
+	padding:10px 20px 10px 0px;
+	float: left;
+}
+.business-left ul li{
+	padding:15px 20px 0px 0px;
+	float: left;
+}
+.business-left .downlunbo{
+	margin-bottom: 20px;
+}
+.business-left span{
+	width: 470px;
+	font-size: 14px;
+	color: #333;
+	float: left;
+}
+.business-left .businessman a{
+	width: 150px;
+	height: auto;
+	float: left;
+	padding: 26px 6px 0px 0px;
+	text-align: center;
+}
+.business-left .businessman a p{
+	padding-top: 3px;
+}
+.business-middle{
+	width: 200px;
+	height: 510px;
+	margin-left: 50px;
+	float: left;
+	padding-top: 20px;
+	overflow: hidden;
+}
+.business-middle .word-top{
+	padding-top:24px;
+	height: 30px;
+	border-bottom:1px solid #e2e2e2;
+	overflow: hidden;
+}
+.business-middle .word-top span{
+	font-weight: 700;
+}
+.business-middle .word-top a{
+	float: right;
+}
+.business-middle ul li{
+	padding:10px 0px 0px 30px;
+	position: relative;
+}
+.business-middle ul li i.one,.business-middle ul li i.two,.business-middle ul li i.three,.business-middle ul li i.four{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../images/indexicon.png') no-repeat -364px 5px;
+	position: absolute;
+	top:8px;
+	left:0px;
+}
+.business-middle ul li i.two{
+	background-position: -364px -20px;
+}
+.business-middle ul li i.three{
+	background-position: -364px -50px;
+}
+.business-middle ul li i.four{
+	background-position: -364px -75px;
+}
+
+.business-right{
+	width: 388px;
+	height: 510px;
+	margin-left: 50px;
+	float: left;
+	padding-top: 20px;
+}
+.business-right .word-top{
+	padding-top:24px;
+	height: 30px;
+	border-bottom:1px solid #e2e2e2;
+}
+.business-right .word-top span{
+	font-weight: 700;
+}
+.business-right .word-top a{
+	float: right;
+}
+.business-right ul li a img{
+	width: 200px;
+	height: 80px;
+	padding-right:20px; 
+	float: left;
+}
+.business-right ul li{
+	width: 388px;
+	height: 80px;
+	padding-top: 24px;
+}
+.business-right ul li a{
+	float: left;
+}
+.business-right ul li p{
+	width: 160px;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	position: relative;
+}
+.business-right ul li p i.vip1,.business-right ul li p i.vip2{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background:url('../images/indexpic.png') no-repeat -474px -152px;
+	position: absolute;
+	top:0px;
+	left:40px;
+}
+.business-right ul li p i.vip2{
+	left:64px;
+	background-position: -474px -186px;
+}
+.business-right ul li a.join{
+	width: 66px;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    background: #dd2726;
+    display: block;
+}
+.business-right p.downp{
+	width: 190px;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	padding-top: 10px;
+	float: left;
+}
+.business-right p.downp span{
+	color:red;
+}
+/*商学院部分结束*/
+/*中部内容结束*/
+
+/*底部内容开始*/
+#footer-top{
+	height: 100px;
+	background: #212121;
+    padding: 5px 0 10px;
+    color:#888;
+    overflow: hidden;
+}
+#footer-top h3{
+	padding:10px 0px; 
+}
+#footer-top a{
+	color:#888;
+	padding: 4px 3px;
+}
+#footer-top span{
+    color:#666;
+}
+#footer-top a:hover{
+	color:#dd2726;
+}
+footer{
+	background: #262626;
+    padding: 35px 0;
+    height: 438px;
+    color:#888;
+    position: relative;
+    overflow: hidden;
+}
+footer a{
+	color:#888;
+}
+footer a:hover{
+	color:#dd2726;
+}
+footer i.logo{
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	background:url('../images/f_pic.png')no-repeat 0px 2px; 
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.footer-element{
+	width: 1000px;
+	height: 210px;
+	padding-left: 200px;
+}
+.footer-element ul{
+	float: left;
+	padding-right: 119px;
+}
+.footer-element .h3{
+	width: 800px;
+	height: 30px;
+}
+.footer-element .h3 h3{
+	width: 80px;
+	height: 30px;
+	border-left:2px solid red;
+	line-height: 30px;
+	text-align:center;
+	float: left;
+	padding-right: 118px;
+}
+.footer-element li{
+	width: 80px;
+	height: 24px;
+	line-height: 30px;
+	text-align: center;
+	border-left:1px solid #888;
+}
+.footer-element-right{
+	width: 180px;
+	height: 170px;
+	border-left:1px solid #888; 
+	float: left;
+}
+.footer-element-right p{
+	width: 180px;
+	height: 30px;
+	padding-left:20px;
+	float: left;
+}
+.footer-element-right i.erweima1{
+	display: inline-block;
+	width:80px;
+	height: 80px;
+	background:url('../images/f_pic.png') no-repeat -420px 6px;  
+	position: absolute;
+	top:96px;
+	right: 290px; 
+}
+.footer-element-right p.saomiao{
+	padding-top: 10px;
+	padding-left: 120px;
+}
+.footer-element-right i.ios{
+	display: inline-block;
+	width: 120px;
+	height: 24px;
+	background:url('../images/f_pic.png') no-repeat -284px 2px;
+	position: absolute;
+	top:118px;
+	right: 156px;
+}
+.footer-element-right i.ios:hover{
+	background-position: -170px 2px;
+}
+.footer-element-right i.android{
+	display: inline-block;
+	width: 120px;
+	height: 24px;
+	background:url('../images/f_pic.png') no-repeat -168px -23px;
+	position: absolute;
+	top:144px;
+	right: 156px;
+}
+.footer-element-right i.android:hover{
+	background-position: -282px -23px;
+}
+footer .tel{
+	width: 1000px;
+	height: 80px;
+	padding-left: 200px;
+	position: relative;
+}
+footer .tel p{
+	width: 100px;
+	height: 64px;
+	float: left;
+	margin-right: 100px;
+}
+footer .tel i.left,footer .tel i.right{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: url('../images/f_pic.png') no-repeat -511px 0px;
+	position: absolute;
+	top:0px;
+	right:290px;
+}
+footer .tel i.right{
+	right:170px;
+	background-position: -625px 0px;
+}
+footer .foot{
+	width: 1000px;
+	height: 168px;
+	padding-left: 200px;
+	padding-top: 10px;
+}
+footer .foot p a{
+	padding: 0px 10px;
+}
+footer .foot ul li{
+	padding: 4px;
+	float: left;
+}
+footer .foot ul li:nth-child(1){
+	padding-left: 0px;
+}
+footer .foot p.banquan{
+	width: 920px;
+	float:left; 
+}
+footer .foot ul.pic li{
+	float: left;
+}
+footer .foot ul.pic li a{
+	display: inline-block;
+	width: 84px;
+	height: 40px;
+	background: url('../images/f_pic.png') no-repeat 0px -88px; 
+	float: left;
+}
+footer .foot ul.pic li a:hover{
+	background-position: 0px -126px;
+}
+/*底部内容结束*/

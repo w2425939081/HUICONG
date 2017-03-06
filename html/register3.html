@@ -1,0 +1,100 @@
+<!DOCTYPE　html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="../images/favicon.ico"/>
+	<title>register3</title>
+    <link rel="stylesheet" href="../css/registertopdown.css">
+    <link rel="stylesheet" href="../css/register3.css">
+
+    <script>
+        var t=5;//设定跳转的时间
+        setInterval("refer()",1000); //启动1秒定时
+        function refer(){
+            if(t==1){
+                location="login.html"; //#设定跳转的链接地址
+            }
+            document.getElementById('show').innerHTML=""+t+"秒后跳转到登录界面"; // 显示倒计时
+            t--; // 计数器递减
+        }
+    </script>
+</head>
+<body>
+	<div class="regTop">
+		<a href="#"class="logo"></a> 
+		<span>我是会员，点此<a href="#">登录</a></span>
+	</div>
+	<div class="regBox">
+		<div class="rB-top"></div>
+	</div>
+	<div class="success">
+        <i class="right"></i>
+		<h1>注册成功!!!</h1>
+        <span id="show"></span>
+	</div>
+	<div class="regBottom">
+    	<ul class="regBottom-inner">
+        	<li>
+            	<div class="icon_1">
+                	<img src="../images/p_1.png">
+                </div>
+                <div class="word">
+                	<p class="fs16">3600W求购信息</p>
+                    <p>汇集B2B网站所有买家情报，快速成交</p>
+                </div>
+            </li>
+            <li>
+            	<div class="icon_1">
+                	<img src="../images/p_2.png">
+                </div>
+                <div class="word">
+                	<p class="fs16">全网流量推广</p>
+                    <p>SEO免费搜索优化，提升商品在线排名</p>
+                </div>
+            </li>
+            <li>
+            	<div class="icon_1">
+                	<img src="../images/p_3.png">
+                </div>
+                <div class="word">
+                	<p class="fs16">专业商铺经营工具</p>
+                    <p>从开店--成交，商铺经营工具一应俱全</p>
+                </div>
+            </li>
+    	</ul>
+    </div>
+    <footer>
+    	<ul>
+    		<li><a href="#">慧聪网首页</a></li>
+    		<li>|</li>
+    		<li><a href="#">关于慧聪</a></li>
+    		<li>|</li>
+    		<li><a href="#">分支结构</a></li>
+    		<li>|</li>
+    		<li><a href="#">买卖通渠道</a></li>
+    		<li>|</li>
+    		<li><a href="#">广告服务</a></li>
+    		<li>|</li>
+    		<li><a href="#">网站导航</a></li>
+    		<li>|</li>
+    		<li><a href="#">广告服务</a></li>
+    		<li>|</li>
+    		<li><a href="#">网站导航</a></li>
+    		<li>|</li>
+    		<li><a href="#">诚聘英才</a></li>
+    		<li>|</li>
+    		<li><a href="#">法律声明</a></li>
+    		<li>|</li>
+    		<li><a href="#">意见投诉</a></li>
+    		<li>|</li>
+    		<li><a href="#">帮助中心</a></li>
+    		<li>|</li>
+    		<li><a href="#">友情链接</a></li>
+    	</ul>
+    	<p>
+			客服：010-80707000 客服传真：010-80707000-5 买卖通咨询热线：400-6360-888（免长途费） 010-80706099 传真：010-80706009-9<br> 版权所有 慧聪网 <a href="#">京ICP证010051号</a> 广告经营许可证：京昌工商厂字第0029号<br> Copyright@2000-2014
+					hc360.com. All Rights Reserved 
+		</p>
+    </footer>
+</body>
+</html>

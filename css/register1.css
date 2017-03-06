@@ -1,0 +1,164 @@
+
+.regList {
+	width: 800px;
+	height: 300px;
+	position: relative;
+	top:0px;
+	left:0px;
+    overflow: hidden;
+    margin-left: 400px;
+}
+em{color:#dd2726;padding-right: 8px;}
+.regList ul{
+	margin-top: 40px;
+}
+.regList ul li{
+	width: 750px;
+    margin-bottom: 20px;
+    float: left;
+}
+.regLeft {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    font-size: 16px;
+    color: #666;
+    text-align: right;
+    padding-right: 23px;
+}
+.regLeft .phoneNumber{
+	width: 255px;
+    height: 36px;
+    background: none;
+    line-height: 36px;
+    padding-left: 5px;
+    float: left;
+    padding-right: 25px;
+    border: 1px solid #ccc;
+    z-index: 10;
+    position: relative;
+}
+.regRight {
+    float: left;
+    width: 600px;
+    height: 40px;
+    position: relative;
+}
+.regRight input{
+    width: 230px;
+    height: 40px;
+    line-height: 36px;
+    padding:0px 25px 0px 5px;
+    float: left;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.regRight input.yanzhenginput{
+	width: 100px;
+	margin-right: 30px;
+}
+.regRight .yanzhengpic{
+    display: inline-block;
+    width: 110px;
+    height: 38px;
+    line-height: 38px;
+    float: left;
+    /*border:1px solid #ccc;*/
+}
+.regRight .iBox {
+    height: 40px;
+    width: 450px;
+    position: relative;
+    float: left;
+}
+.regRight .iBox img{
+	float: left;
+}
+.regRight .iBox a.nolook{
+	display: inline-block;
+	width: 100px;
+	line-height: 40px;
+	font-size: 12px;
+    float: left;
+    color: #0c76f4;
+    text-align: center;
+}
+.regRight .iBox .duanxinyanzheng{
+	width: 110px;
+	line-height: 40px;
+	background: #f6f6f6;
+	border:1px solid #ccc;
+	position: absolute;
+	top:0px;
+	left:230px;
+}    
+.promptBox {
+	width: 220px;
+	height: 40px;
+	float: left;
+	display: none;
+}
+.tips-errow, .tips-ok, .tipsCur {
+    padding-left: 20px;
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+}
+.yZ .tips-errow{
+    position: absolute;
+    top:0px;
+    left:350px;
+}
+.pN i.ok,.pN i.error,.pN i.cur{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../images/regIco.png') no-repeat -295px 2px;
+    position: absolute;
+    top:12px;
+    left:234px;
+    display: none;
+}
+.yZ i.ok,.yZ i.error,.yZ i.cur{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../images/regIco.png') no-repeat -295px 2px;
+    position: absolute;
+    top:12px;
+    left:0px;
+    display: block;
+}
+.dX i.ok,.dX i.error,.dX i.cur{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../images/regIco.png') no-repeat -295px 2px;
+    position: absolute;
+    top:12px;
+    left:0px;
+    display: block;
+}
+.dX .tips-errow{
+    position: absolute;
+    top:0px;
+    left:350px;
+}
+.promptBox i.error{
+    background-position: -295px -32px;
+}
+.promptBox i.cur{
+    background-position: -295px -66px;
+}
+.regList ul li .next{
+    width: 287px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #dd2726;
+    margin-left: 144px;
+    font-size: 16px;
+}
+
+

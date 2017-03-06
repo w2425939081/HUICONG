@@ -1,0 +1,938 @@
+*{margin: 0;padding:0;border:0;}
+ul{list-style: none;}
+a{text-decoration: none;color:#000;}
+body {
+    font: 12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;
+    color: #333;
+    margin:0 auto;
+}
+.active{
+	color:#dd2726;
+}
+a:hover{
+	color:red;
+	text-decoration: underline;
+}
+.center{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
+header{
+    position: relative;
+    z-index: 999;
+}
+/*搜索栏开始*/
+#headTop{
+	width: 100%;
+	height: 100px;
+	border-bottom:1px solid #dd2726;
+	position: relative;
+	margin-top: 17px;
+}
+#headTop a.logo{
+	display: inline-block;
+	width: 170px;
+	height: 70px;
+	background:url('../images/NewProIco.png') no-repeat -270px 0px;
+	position: absolute;
+	top:30px;
+	left:0px;
+}
+#headTop .middle{
+	width: 700px;
+	height: 100px;
+	position: absolute;
+	top:0px;
+	left: 200px;
+}
+#headTop .middle input{
+	width: 480px;
+	height: 34px;
+	border:1px solid #a8a8a8;
+	position: absolute;
+	top:30px;
+	left: 0px;
+	padding-left: 20px;
+}
+#headTop .middle p{
+	position: absolute;
+	top:75px;
+}
+#headTop .middle p a{
+	color:#999;
+	padding-right: 10px;
+}
+#headTop .middle p a:hover{
+	color:#dd2726;
+}
+#headTop .middle p a:nth-child(1){
+	color:#666;
+}
+#headTop .middle p a:nth-child(1):hover{
+	color:#666;
+}
+#headTop .middle a.souquanzhan,#headTop .middle a.soubendian{
+	display: inline-block;
+	width: 80px;
+	height: 34px;
+	background:#dd2726;
+	color:#fff;
+	text-align: center;
+	line-height: 34px;
+	position: absolute;
+	border:1px solid #dd2726;
+	top:30px;
+	right:116px;
+}
+#headTop .middle a.soubendian{
+	background:#fff;
+	border:1px solid #dd2726;
+	color:#dd2726;
+	position: absolute;
+	right:10px;
+}
+#headTop a.buy,#headTop a.supply{
+    display:inline-block;
+    width: 128px;
+    margin-left: 10px;
+    height: 34px;
+    border: 1px solid #dfdfdf;
+    background: #f9f9f9;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    line-height: 34px;
+    position: absolute;
+    top:30px ;
+    right: 140px;
+}
+#headTop a.supply{
+	position: absolute;
+	right: 0px;
+}
+#headTop a.buy:hover,#headTop a.supply:hover{
+	border: 1px solid #dd2726;
+	text-decoration: none;
+}
+#headTop a.buy i.buy,#headTop a.supply i.supply{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../images/NewProIco.png') no-repeat -558px 2px;
+	position: absolute;
+	top:6px;
+	right:100px;
+}
+#headTop a.supply i.supply{
+	background-position: -686px 2px;
+}
+
+/*搜索栏结束*/
+
+.ad{
+	width: 100%;
+	height: 110px;
+	background:url('../images/wKhQpVYkTWGEVP-fAAAAAC0F6-8779.jpg') no-repeat 0px 0px; 
+}
+
+/*导航栏开始*/
+nav{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #000;
+	color:#fff;
+	position: relative;
+	z-index: 2;
+}
+nav .center{
+	width: 1040px;
+	height: 40px;
+	margin:0 auto;
+}
+nav .center ul li{
+	width: 130px;
+	text-align: center;
+	float: left;
+}
+nav .center ul li a{
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	color:#fff;
+}
+nav .center ul li a:hover{
+	background: #dd2726;
+	text-decoration: none;
+}
+nav .center ul li .supply{
+	width: 200px;
+	height: 200px;
+	background: #fff;
+	border:1px solid #666;
+	position: absolute;
+	top:40px ;
+	left: 259px;
+	display: none;
+}
+nav .center ul li .supply li a{
+	display: inline-block;
+	width: 180px;
+	height: 40px;
+	color:#0266b4;
+	text-align: left;
+	padding-left: 20px;
+}
+nav .center ul li.gongying:hover nav .center ul li.gongying .supply{
+	display: block;
+	/*没效果*/
+}
+nav .center ul li .supply li a:hover{
+	color:#fff;
+	background: #999;
+}
+/*导航栏结束*/
+section{
+	width: 100%;
+	/*height:800px;*/
+	height: auto;
+	background: #f8f8f8;
+}
+section .center{
+	width: 1200px;
+	height:6300px;
+	margin: 0 auto;
+	position: relative;
+}
+section .center .left,section .center .right{
+	width: 600px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	position: relative;
+}
+section .center .right{
+	float: right;
+	position: relative;
+}
+section .center .right .right-1{
+	width: 480px;
+	height: 30px;
+	line-height: 30px;
+	border:1px solid #dfdfdf;
+	background: #fafafa;
+	position: absolute;
+	top:2px;
+	right:0px;
+	padding-left: 20px;
+}
+section .center .right .right-1 span{
+	padding-right: 200px;
+}
+section .center .right .right-1 span i.star{
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	background: url('../images/c2.png') no-repeat 0px 4px;
+	position: absolute;
+	top:4px ;
+	left: 240px;
+}
+section .center .right .right-1 i.erweima{
+	display: inline-block;
+	width: 40px;
+	height: 30px;
+	background: url('../images/NewProIco.png') no-repeat -94px 2px; 
+	position: absolute;
+	top:0px ;
+	right:0px;
+}
+section .center .detailsBox1 {
+	clear: both;
+    border: 1px solid #e5e5e5;
+    width: 1200px;
+    height: 660px;
+    background: #fff;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+.detailsBox1 .Box1Left{
+	width: 1000px;
+	height: 660px;
+	border-right:1px dashed #ddd;
+	float: left;
+}
+.detailsBox1 .Box1Left .Box1Left-1{
+	width: 300px;
+	height: 400px;
+	margin:30px 0px 0px 10px;
+	float: left;
+}
+
+/*box start*/
+.box{width:300px;margin:0px auto;}
+.tb-pic a{display:table-cell;text-align:center;vertical-align:middle;}
+.tb-pic a img{vertical-align:middle;}
+.tb-pic a{*display:block;*font-family:Arial;*line-height:1;}
+.tb-thumb{margin:10px 0 0;overflow:hidden;}
+.tb-thumb li{background:none repeat scroll 0 0 transparent;float:left;height:42px;margin:0 6px 0 0;overflow:hidden;padding:1px;}
+.tb-s310, .tb-s310 a{height:300px;width:300px;}
+.tb-s310, .tb-s310 img{max-height:300px;max-width:300px;}
+.tb-s310 a{*font-size:271px;}
+.tb-s40 a{*font-size:35px;}
+.tb-s40, .tb-s40 a{height:40px;width:40px;}
+.tb-booth{border:1px solid #CDCDCD;position:relative;z-index:1;}
+.tb-thumb .tb-selected{background:none repeat scroll 0 0 #C30008;height:40px;padding:2px;}
+.tb-thumb .tb-selected div{background-color:#FFFFFF;border:medium none;}
+.tb-thumb li div{border:1px solid #CDCDCD;}
+div.zoomDiv{z-index:999;position:absolute;top:0px;left:0px;width:200px;height:200px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+div.zoomMask{position:absolute;background:url("http://demo.lanrenzhijia.com/2015/jqzoom0225/images/mask.png") repeat scroll 0 0 transparent;cursor:move;z-index:1;}
+
+/*box end*/
+.detailsBox1 .Box1Left .Box1Left-2{
+	width: 600px;
+	height: 580px;
+	float: left;
+	margin: 20px 0px 0px 20px;
+}
+.detailsBox1 .Box1Left .Box1Left-2 .pink{
+	width: 600px;
+	height: 70px;
+	background: url('../images/NewProIco.png') no-repeat 0px -357px;
+}
+section .center .detailsBox1 span{
+	width: 65px;
+    text-align: left;
+    margin: 0 18px 0 15px;
+    color: #999;
+    font-size: 14px;
+}
+.detailsBox1 .Box1Left .Box1Left-2 .pink h1{
+	display: inline-block;
+	width: 150px;
+	height: 70px;
+	line-height: 70px;
+	color:#ee2e2c;
+}
+.detailsBox1 .Box1Left .Box1Left-2 .pink a{
+	float: right;
+	margin:10px 20px 0px 0px;
+	color:#ee2e2c;
+}
+.detailsBox1 .Box1Left .Box1Left-2 .pink a i{
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+	background: url('../images/dAlertIco.png') no-repeat 0px 0px;
+	margin-left:4px;
+}
+.detailsBox1 .Box1Left .Box1Left-2 p{
+	width: 600px;
+	height: 40px;
+	line-height: 40px;
+	margin: 6px 0px ;
+}
+.detailsBox1 .Box1Left .Box1Left-2 p .yuan{
+    color:#dd2726;
+    font-size:16px;
+}
+.detailsBox1 .Box1Left .Box1Left-2 p a.big{
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	border:1px solid #ee2e2c;
+	color:#ee2e2c;
+	padding: 2px 20px;
+	position: relative;
+}
+.detailsBox1 .Box1Left .Box1Left-2 p a i{
+	display: inline-block;
+	width:12px;
+	height: 10px;
+	background: url('../images/NewProIco.png') no-repeat 0px -25px; 
+	position: absolute;
+	bottom: 0px;
+	right:0px;
+}
+.detailsBox1 .Box1Left .Box1Left-2 .table{
+	width: 420px;
+	height: 124px;
+	border-collapse:collapse; 
+	background: #eee;
+	margin-left: 90px;
+}
+/*一像素的表格就是让border:0;小背景设置成白色，大背景设置成想要的border颜色就能够出来了*/
+table th,table td{
+	width: 80px;
+	height: 30px;
+ 	background: #fff;
+ 	text-align: center;
+
+}
+.detailsBox1 .Box1Left .Box1Left-2 .table .num{
+	width: 180px;
+	height: 30px;
+	position: relative;
+}
+.detailsBox1 .Box1Left .Box1Left-2 .table .num input.left,.detailsBox1 .Box1Left .Box1Left-2 .table .num input.right{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: #ddd;
+	border:1px solid #eee;
+	position: absolute;
+	text-align: center;
+	line-height: 30px;
+	left:30px;
+}
+.detailsBox1 .Box1Left .Box1Left-2 .table .num input:hover{
+	text-decoration: none;
+	color:#333;
+}
+.detailsBox1 .Box1Left .Box1Left-2 .table .num input.right{
+	position: absolute;
+	left:90px;
+}
+.detailsBox1 .Box1Left .Box1Left-2 .table .num input.number{
+	width: 52px;
+	height: 30px;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	outline:none;
+	padding-left: 14px;
+}
+.detailsBox1 .Box1Left .Box1Left-2 .table .num p{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	top:-5px;
+	right:-24px;
+}
+.detailsBox1 .Box1Left .Box1Left-2 p .price{
+	color:#ee2e2c;
+	font-size: 20px;
+}
+.detailsBox1 .Box1Left .Box1Left-2 p a.check{
+	float: right;
+	color:#aaa;
+	text-decoration: underline;
+}
+.detailsBox1 .Box1Left .Box1Left-2 a.buy,.detailsBox1 .Box1Left .Box1Left-2 a.put,.detailsBox1 .Box1Left .Box1Left-2 a.touch{
+	display: inline-block;
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-right: 20px;
+}
+.detailsBox1 .Box1Left .Box1Left-2 a.buy:hover,.detailsBox1 .Box1Left .Box1Left-2 a.put:hover,.detailsBox1 .Box1Left .Box1Left-2 a.touch:hover {
+    text-decoration: none;
+}
+.detailsBox1 .Box1Left .Box1Left-2 a.buy{
+	background: #ee2e2c;
+	border:1px solid #ee2e2c;
+	color:#fff;
+	margin-left: 80px;
+}
+.detailsBox1 .Box1Left .Box1Left-2 a.put{
+	background: #fff4f4;
+	border:1px solid #eb1311;
+	color:#eb1311;
+}
+.detailsBox1 .Box1Left .Box1Left-2 a.touch{
+	background: #f9f9f9;
+	border:1px solid #dfdfdf;
+	color:#666;
+}
+.detailsBox1 .Box1Left .Box1Left-2 a.deal,.detailsBox1 .Box1Left .Box1Left-2 a.pay,.detailsBox1 .Box1Left .Box1Left-2 a.protect{
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-right: 20px;
+	position: relative;
+}
+.detailsBox1 .Box1Left .Box1Left-2 a.deal i,.detailsBox1 .Box1Left .Box1Left-2 a.pay i,.detailsBox1 .Box1Left .Box1Left-2 a.protect i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../images/NewProIco.png') no-repeat -983px -704px;
+	position: absolute;
+	top:9px;
+	right:4px;
+}
+
+
+.Box1right{
+	width: 180px;
+	height: auto;
+	float: right;
+}
+.Box1right h3{
+	color:#eb1311;
+	text-align: center;
+	margin: 20px 0px;
+}
+.Box1right .pic{
+	width: 180px;
+	height: 100px;
+	border-bottom:1px dashed #e6e6e6;
+	margin: 10px 0px;
+}
+.Box1right .last{
+	border-bottom:0px;
+}
+.Box1right .pic a.picture{
+	display: inline-block;
+	width: 100px;
+	height: 80px;
+	border:1px solid #e6e6e6;
+	vertical-align: middle;
+    text-align: center;
+}
+.Box1right ul li{
+	position: relative;
+}
+.Box1right .pic a.word{
+	display: inline-block;
+	width: 70px;
+	height: 40px;
+}
+.Box1right .pic p{
+	width: 70px;
+	color:#ee2e2c;
+	position: absolute;
+	bottom:24px;
+	right: 0px;
+}
+/*第二个板块开始*/
+.detailsBox2{
+	width: 1160px;
+    padding: 18px 20px 15px;
+    margin: 0 auto;
+    border: 1px solid #e5e5e5;
+    margin-top: 15px;
+    background: #fff;
+}
+.detailsBox2 h2{
+	width: 1080px;
+	height: 20px;
+	line-height: 20px;
+	border-left:3px solid #ee2e2c;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+.detailsBox2-bottom{
+	overflow: hidden;
+    padding-top: 20px;
+}
+.detailsBox2-bottom ul li{
+	width: 172px;
+    margin-right: 20px;
+    float: left;
+}
+.detailsBox2-bottom ul li .pic{
+    height: 170px;
+    width: 170px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+.detailsBox2-bottom ul li .pic a{
+	display: table-cell;
+    height: 170px;
+    width: 170px;
+    text-align: center;
+    vertical-align: middle;
+}    
+.detailsBox2-bottom ul li .pic img{
+	display: inline;
+    height: 132.6px;
+    width: 170px;
+    vertical-align: middle;
+}       
+.detailsBox2-bottom ul li a.word{
+	display: inline-block;
+	width: 170px;
+	height: 20px;
+	overflow:hidden;
+}         
+.detailsBox2-bottom ul li p{
+	color:#ee2e2c;
+}
+/*第二个板块结束*/
+
+
+/*第三个板块开始*/
+.detailsBox3,.detailsBox4,.detailsBox5{
+	width: 238px;
+    height: auto;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    margin: 15px 0px;
+    position: relative;
+}
+.vip-title{
+    height: 48px;
+    background: #f9f9f9;
+    line-height: 48px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.detailsBox3 h2{
+    height: 48px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+.hclogo-small{
+    float: left;
+    display: block;
+    width: 32px;
+    height: 48px;
+    background: url('../images/NewProIco.png') 0 -65px;
+}
+.mmt-vip-mid {
+    font-size: 16px;
+    float: left;
+    display: block;
+    color: #ee2e2c;
+    font-style: normal;
+    margin: 0 8px 0 4px;
+}
+.years-th {
+    font-size: 16px;
+    float: left;
+    color: #333;
+}
+.years-th i {
+    font-style: normal;
+    margin: 0 1px;
+    color: #ee2e2c;
+    font-weight: bold;
+}
+.company-name{
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+    color: #333;
+    margin: 0px 20px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px dashed #dfdfdf;
+}
+i.ten-vip{
+	display: inline-block;
+	width: 160px;
+	height: 50px;
+    background: url('../images/NewProIco.png') no-repeat -134px -230px;
+    margin: 5px 40px;
+}
+.item-mmt-txt {
+    padding: 10px 20px 0;
+    overflow: hidden;
+    padding-bottom: 8px;
+}
+.item-mmt-txt ul li {
+    overflow: visible;
+    float: left;
+    width: 217px;
+}
+.item-mmt-txt ul li a img{
+	position: absolute;
+	top:180px;
+	left: 88px;
+}
+.item-mmt-txt ul li span{
+    color: #666;
+    display: block;
+    margin-right: 0;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+}
+.item-mmt-txt ul li a{
+	float: left;
+    width: 135px;
+    line-height: 30px;
+    min-height: 30px;
+    font-size: 14px;
+    color: #333;
+    padding-left: 2px;
+}
+.item-mmt-txt ul li p{
+	display: block;
+    margin-right: 0;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+}
+.itemBtnBox {
+    border-top: 1px solid #dfdfdf;
+    padding-top: 14px;
+    height: 48px;
+    padding-left: 20px;
+}
+.itemBtnBox a {
+    display: block;
+    height: 30px;
+    font-size: 14px;
+    color: #666;
+    width: 72px;
+    float: left;
+    background: url(http://style.org.hc360.com/images/detail/mysite/siteconfig/new_product/newImg/NewProIco.png) #f9f9f9 no-repeat;
+    border: 1px solid #dfdfdf;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+.itemBtnBox a.ItenmBtn {
+    background-position: -974px -189px;
+}
+.itemBtnBox a.ConsBtn {
+    background-position: -974px -237px;
+}
+/*第三个板块结束*/
+
+.u-flyer {display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;}
+
+
+/*第四个板块开始*/
+.detailsBox4 .detailsBox4-top,.detailsBox5 .detailsBox5-top{
+	width: 238px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #e5e5e5;
+	position: relative;
+}
+.detailsBox4-top h3,.detailsBox5-top h3{
+	padding-left: 20px;
+}
+.detailsBox4-top a.more,.detailsBox5-top a.more{
+	position: absolute;
+	top:0px;
+	right:20px;
+}
+/*第四个板块结束*/
+
+/*第五个板块开始*/
+.detailsBox5 .pic {
+    width: 180px;
+    height: 100px;
+    border-bottom: 1px dashed #e6e6e6;
+    margin: 10px 0px;
+    position: relative;
+}
+.detailsBox5 .pic a.picture {
+    display: inline-block;
+    width: 100px;
+    height: 80px;
+    border: 1px solid #e6e6e6;
+    vertical-align: middle;
+    text-align: center;
+}
+.detailsBox5 .pic a.word {
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+}
+.detailsBox5 .pic p {
+    width: 70px;
+    color: #ee2e2c;
+    position: absolute;
+    bottom: 24px;
+    right: 0px;
+}
+/*第五个板块结束*/
+/*第六个板块开始*/
+.detailsBox6{
+	width: 930px;
+	height: auto;
+	border:1px solid #e5e5e5;
+	background: #fff;
+	position: relative;
+	top:-1090px;
+	left: 270px;
+}
+.detailsBox6-top{
+	width: 930px;
+	height: 50px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.detailsBox6-top a{
+	display: inline-block;
+	width: 140px;
+	height: 47px;
+	line-height: 47px;
+    border-bottom: 2px solid #ee2e2c;
+	font-size: 20px;
+	text-align: center;
+    color: #ee2e2c;
+}
+.detailsBox6-top a.order{
+	color:#666;
+	border-bottom: none;
+}
+.detailsBox6-top a:hover{
+	text-decoration: none;
+}
+.detailsBox6-middle{
+	width: 930px;
+	height: auto;
+}
+.detailsBox6-middle p{
+	padding:20px 30px;
+	font-weight: 900;
+	font-size: 30px;
+}
+.detailsBox6-middle table {
+    width: 880px;
+    float: left;
+    border-left: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    font-size: 12px;
+    margin-bottom: 18px;
+    margin-left: 30px;
+}
+.detailsBox6-middle th {
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    width: 40px;
+    padding: 0;
+    background-color: #F5F5F5;
+    text-align: center;
+    font-weight: normal;
+    min-height: 34px;
+    line-height: 34px;
+}
+.detailsBox6-middle td {
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding-left: 40px;
+    text-align: left;
+}
+
+
+.detailsBox6-bottom p{
+	padding:20px 30px;
+	font-weight: 900;
+	font-size: 30px;
+}
+.detailsBox6-bottom-1{
+	width: 880px;
+	height: auto;
+	border:1px solid #333;
+	border-right: 0px;
+	margin-left: 30px;
+}
+.detailsBox6-bottom-1 li{
+	padding: 2px;
+}
+/*第六个板块结束*/
+
+/*第七个板块开始*/
+.detailsBox7{
+	width: 930px;
+	height: auto;
+	border:1px solid #e5e5e5;
+	background: #fff;
+	position: absolute;
+	bottom:100px;
+	right: -2px;
+}
+.detailsBox7-top{
+	width: 930px;
+	height: 50px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.detailsBox7-top p{
+	width: 880px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+	border-left:2px solid #ee2e2c;
+	margin-top:10px;
+	padding-left: 10px;
+	margin-left: 20px;
+}
+.detailsBox7-element{
+	width: 930px;
+	height: auto;
+	padding: 20px;
+	
+}
+.detailsBox7-element h3{
+    clear:both;
+	padding: 20px 0px;
+	font-weight: 900;
+}
+.detailsBox7-element a{
+	display: block;
+    width: 154px;
+    margin-right: 20px;
+    float: left;
+    height: 28px;
+    font-size: 12px;
+    color: #666;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.reListShow, .reListHide {
+    position: absolute;
+    height: 22px;
+    width: 80px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    left: 50%;
+    margin-left: -46px;
+    bottom: -23px;
+    border-top: navajowhite;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    padding-right: 10px;
+    line-height: 22px;
+}
+.reListShow {
+    background: url('../images/NewProIco.png') -918px -522px no-repeat #fff;
+    cursor: pointer;
+}
+.reListHide {
+    background: url('../images/NewProIco.png') -918px -564px no-repeat #fff;
+    cursor: pointer;
+}
+/*第七个板块结束*/
+
+/*底部开始*/
+footer{
+	width: 980px;
+    line-height: 20px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #999;
+    padding: 40px 0 30px 0;
+    text-align: center;
+}
+footer ul{
+	width: 980px;
+	height: 20px;
+	margin: 0 auto;
+	padding-left: 140px;
+}
+footer ul li{
+	float: left;
+}
+footer ul li a,footer p a{
+	color:#999;
+}
+footer ul li a:hover,footer p a:hover{
+	color:#333;
+}
+/*底部结束*/

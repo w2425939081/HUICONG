@@ -1,0 +1,31 @@
+.regBox .rB-top {
+    height: 70px;
+    width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid #e5e5e5;
+    background: url('../images/proc_3.png') no-repeat center center;
+}
+.success{
+    width: 980px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.success i.right{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url("../images/success.jpg") no-repeat 0px 0px;
+    position: absolute;
+    top:20px;
+    left: 350px;
+    background-size: 100%;
+}
+.success span{
+    position: absolute;
+    top:0px;
+    right: 230px;
+}

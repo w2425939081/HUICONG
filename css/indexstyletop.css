@@ -1,0 +1,511 @@
+*{margin: 0;padding:0;border:0;}
+ul{list-style: none;}
+a{text-decoration: none;color:#000;}
+body {
+    font: 12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;
+    color: #333;
+    margin:0 auto;
+}
+.active{
+	color:#dd2726;
+}
+a:hover{
+	color:red;
+	text-decoration: underline;
+}
+/*标题栏开始*/
+header{
+	line-height: 30px;
+    height: 30px;
+    border-bottom: 1px solid #f2f2f2;
+    background: #f9f9f9;
+}
+.center{
+	width: 1200px;
+	margin: 0 auto;
+}
+.top-left,.top-right{
+	width: 400px;
+	height: 30px;
+	float: left;
+	font-size: 12px;
+	color: #666;
+}
+.top-right{
+	width: 800px;
+	float: right;
+}
+.Mobile{
+	width: 60px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	left:0px;
+}
+.mobile{
+	width: 60px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	left:0px;
+}
+a.mobile span:hover{
+	text-decoration: underline;
+}
+.mobile span{
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 20px;
+}
+.phone{
+	display: inline-block;
+	width: 20px;
+	height: 30px;
+	background: url('../images/indexpic.png') no-repeat -474px -292px;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.mobile .triangle{
+	border-color: #bbb transparent transparent;
+    border-style: solid dashed dashed;
+    border-width: 3px;
+    position: absolute;
+    top:15px;
+    left:66px;
+}
+.top-left .shu{
+	float: left;
+    border-left: 1px solid #e6e6e6;
+    display: inline-block;
+    height: 14px;
+    position: absolute;
+    top:8px;
+	left:86px;
+}
+.top-left p{
+	padding-left: 100px;
+	float: left;
+}
+/*这个小三角星的做法，就是先做出来两个小菱形，然后让背景的
+菱形大于上面的菱形，用来制作边框，然后通过z-index，让它们处在不同的层，
+然后通过叠加就出现了有边框的三角形的效果*/
+.top-left .Mobile .white-triangle em{
+	margin-top: -16px;
+    color: #fff;
+    font-style: normal;
+    position: absolute;
+    z-index: 5;
+    top:31px;
+    left: 31px;
+    display: none;
+}
+.top-left .Mobile .white-triangle span{
+	display: none;
+    width: 30px;
+    height: 16px;
+    color:#e5e6e6;
+    font-size: 30px;
+    position: absolute;
+    top:18px;
+    left:22px;
+    z-index: 2;
+}
+/*hover部分开始*/
+.top-left .Mobile:hover .mob,.top-left .Mobile:hover em,.top-left .Mobile:hover span{
+	display: block;
+}
+
+.top-left .Mobile:hover .mobile .triangle{
+	/*border-color: transparent transparent #bbb ;
+    border-style: dashed dashed solid;
+    border-width: 3px;*/
+    -moz-transition: all 0.1s ease-in-out; 
+	-webkit-transition: all 0.1s ease-in-out; 
+	-o-transition: all 0.1s ease-in-out; 
+	-ms-transition: all 0.1s ease-in-out; 
+	transition: all 0.1s ease-in-out; 
+    -moz-transform: rotate(180deg); 
+	-webkit-transform: rotate(180deg); 
+	-o-transform: rotate(180deg); 
+	-ms-transform: rotate(180deg); 
+	transform: rotate(180deg); 
+	
+}
+.top-left .mob{
+	position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 248px;
+    height: 160px;
+    background: #fff;
+    border: 1px solid #e5e6e6;
+    z-index: 3;
+    display: none;
+}
+p.MobHC{
+	overflow: hidden;
+	width: 100%;
+    height: 28px;
+    color: #787878;
+    border-bottom: 1px solid #efefef;
+    padding: 0px 0px 0px 20px;
+    line-height: 28px;
+}
+.mob .Mobcont i{
+	display: inline-block;
+	width: 115px;
+	height: 110px;
+	background: url('../images/sevpic.png') no-repeat 0px -322px; 
+	position: absolute;
+	top:40px;
+	left:10px;
+}
+.mob .Mobcont p{
+	padding: 0px;
+	display: block;
+	width: 88px;
+	height: 54px;
+	position: absolute;
+	top:40px;
+	left: 140px;
+}
+.mob .Mobcont a{
+	display: block;
+	width: 100px;
+	height: 24px;
+	background: url('../images/sevpic.png') no-repeat -315px -10px;
+	position: absolute;
+	bottom:38px;
+	right:6px;
+}
+.mob .Mobcont a.one{
+	background-position: -315px -10px;
+	bottom:38px;
+}
+.mob .Mobcont a.two{
+	background-position: -430px -10px;
+	bottom: 10px;
+}
+
+/*hover部分结束*/
+
+
+
+
+
+
+.top-left .login{
+	padding-left: 24px;
+	font-size: 12px;
+	color: #666;
+}
+.top-left .login:hover{
+	color: #dd2726;
+}
+.top-left .register{
+	padding-left: 8px;
+	font-size: 12px;
+	color: #dd2726;
+}
+.top-left .register:hover{
+	text-decoration: underline;
+}
+.top-left a.PC,.top-left a.chahao{
+	display: inline-block;
+	width: 150px;
+	height: 20px;
+	line-height: 20px;
+	color:#f6f6f6;
+	border-radius:5px 0px 0px 5px;
+	background: #dd2726;
+	position: absolute;
+	top:30px;
+	left: 250px;
+}
+.top-left a.PC:hover,.top-left a.chahao:hover{
+	text-decoration: none;
+}
+.top-left a.chahao{
+	width: 16px;
+	line-height: 20px;
+	text-align: center;
+	border-radius:0px 5px 5px 0px;
+	left:400px;
+}
+.top-left .red-triangle{
+	width: 6px;
+	height: 6px;
+	color:#dd2726;
+	font-style: normal;
+	position: absolute;
+	top:15px;
+	left: 263px;
+}
+.top-right ul{
+	float: right;
+}
+.top-right ul li,.top-right ul li.small{
+	width: 75px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.top-right ul li.small{
+	width: 65px;
+}
+.top-right ul li.lishu{
+	width: 1px;
+	float: left;
+	border-left: 1px solid #e6e6e6;
+    display: inline-block;
+    height: 14px;
+    position: relative;
+    top:8px;
+    left:3px;
+}
+.top-right ul li a{
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	
+}
+.top-right ul li a i.triangle,.top-right ul li.small a i.triangle{
+	border-color: #bbb transparent transparent;
+    border-style: solid dashed dashed;
+    border-width: 3px;
+    position: absolute;
+    top:15px;
+    right:5px;
+}
+.one,.two,.three,.four,.five,.six,.seven{
+	z-index: 2;
+}
+.one-1{
+	width: 200px;
+	height: 190px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -1px;
+	z-index: 1;
+	display: none;
+}
+.one-1 ul{
+	width: 100px;
+	height: 190px;
+	float: left;
+	text-align: left; 
+}
+.one-1 ul h3{
+	margin-top: 6px;
+	padding-left: 10px;
+	color: #333;
+}
+.one-1 ul li a{
+	display: inline-block;
+	width: 76px;
+	height: 28px;
+	line-height: 28px;
+	text-align: left;
+	padding-left: 10px;
+}
+.two-1{
+	width: 170px;
+	height: 170px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -1px;
+	z-index: 1;
+	display: none;
+}
+.two-1 ul li{
+	width: 160px;
+	height: 32px;
+	float: left;
+	text-align: left; 
+}
+.two-1 ul li a{
+	display: inline-block;
+	width: 150px;
+	height: 32px;
+	line-height: 32px;
+	text-align: left;
+	padding-left: 20px;
+}
+.two-1 ul p{
+	text-align: left;
+	padding-left: 20px;
+	color: #333;
+}
+.three-1{
+	width: 170px;
+	height: 60px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -1px;
+	z-index: 1;
+	display: none;
+}
+.three-1 a{
+	display: inline-block;
+	width: 150px;
+	height: 20px;
+	line-height: 20px;
+	text-align: left;
+	padding-left: 20px;
+}
+.three-1 p{
+	text-align: left;
+	padding-left: 20px;
+	color: #333;
+}
+.four-1{
+	width: 120px;
+	height: 180px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -1px;
+	z-index: 1;
+	display: none;
+}
+.four-1 ul li {
+	width: 120px;
+	height: 30px;
+}
+.four-1 ul li a{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	padding-left: 20px;
+}
+.four-1 i.ewm{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: url('../images/sevpic.png')no-repeat -8px -228px;
+	position: absolute;
+	top:90px;
+	left: 20px;
+}
+
+.five-1{
+	width: 220px;
+	height: 430px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -1px;
+	z-index: 1;
+	display: none;
+}
+.five-1 h3,.seven-1 h3{
+	color: #333;
+	text-align: left;
+	padding-left: 10px;
+}
+.five-1 a,.seven a{
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	line-height: 20px;
+	text-align: left;
+	float: left;
+	padding-left: 10px;
+}
+.six-1{
+	width: 75px;
+	height: 120px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -1px;
+	z-index: 1;
+	display: none;
+}
+.six-1 a{
+	width: 75px;
+}
+.seven-1{
+	width: 220px;
+	height: 340px;
+	border:1px solid #e5e6e6;
+	border-top:none;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -148px;
+	z-index: 1;
+	display: none;
+}
+/*标题栏hover开始*/
+.top-right ul li.one:hover,
+.top-right ul li.two:hover,
+.top-right ul li.three:hover,
+.top-right ul li.four:hover,
+.top-right ul li.five:hover,
+.top-right ul li.six:hover,
+.top-right ul li.seven:hover{
+	width: 73px;
+	background: #fff;
+	border-left:1px solid #e5e6e6;
+	border-right:1px solid #e5e6e6;
+}
+.top-right ul li.three:hover{
+	width: 63px;
+}
+.top-right ul li.one:hover .triangle,
+.top-right ul li.two:hover .triangle,
+.top-right ul li.three:hover .triangle,
+.top-right ul li.four:hover .triangle,
+.top-right ul li.five:hover .triangle,
+.top-right ul li.six:hover .triangle,
+.top-right ul li.seven:hover .triangle{
+	-moz-transition: all 0.1s ease-in-out; 
+	-webkit-transition: all 0.1s ease-in-out; 
+	-o-transition: all 0.1s ease-in-out; 
+	-ms-transition: all 0.1s ease-in-out; 
+	transition: all 0.1s ease-in-out; 
+    -moz-transform: rotate(180deg); 
+	-webkit-transform: rotate(180deg); 
+	-o-transform: rotate(180deg); 
+	-ms-transform: rotate(180deg); 
+	transform: rotate(180deg); 
+}
+.top-right ul li.one:hover .one-1,
+.top-right ul li.two:hover .two-1,
+.top-right ul li.three:hover .three-1,
+.top-right ul li.four:hover .four-1,
+.top-right ul li.five:hover .five-1,
+.top-right ul li.six:hover .six-1,
+.top-right ul li.seven:hover .seven-1{
+	display: block;
+}
+.one-1 a:hover,.two-1 a:hover,.three-1 a:hover,.four-1 a:hover,.five-1 a:hover,.six-1 a:hover,.seven-1 a:hover{
+	background: #dd2726;
+	color:#fff;
+}
+/*标题栏hover结束*/
+/*标题栏结束*/
+
+

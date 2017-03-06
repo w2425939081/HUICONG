@@ -1,0 +1,55 @@
+*{margin: 0;padding:0;border:0;}
+ul{list-style: none;}
+a{text-decoration: none;color:#000;}
+body{
+	font: 12px/1.5 Tahoma,Arial,"\5b8b\4f53",sans-serif;
+    color: #333;
+    margin:0 auto;
+}
+#hcright{
+	width: 30px;
+	height: 500px;
+	position: fixed;
+	top:200px;
+	right:4px;
+	z-index: 999;
+}
+#hcright a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: #aaa url('../images/indexicon.png')no-repeat -96px -266px;
+	position: relative;
+} 
+#hcright a.gouwu{
+	background-position: -96px -266px;
+}
+#hcright a.kehu{
+	background-position: -124px -266px;
+}
+#hcright a.zaixian{
+	background-position: -150px -266px;
+}
+#hcright a.yonghu{
+	background: #dd2627 url('../images/indexicon.png')no-repeat -185px -266px;
+}
+#hcright a p{
+	width: 0px;
+	height: 0px;
+	line-height: 30px;
+	background: #dd2627;
+	position: absolute;
+	top:0px;
+	left: -61px;
+	color:#fff;
+	text-align: left;
+	padding-left: 10px;
+	display: none;
+    z-index:-1;
+}
+ #hcright .returnTop a{
+	width: 30px;
+	height: 30px;
+	margin-top: 334px;
+	background: #aaa url('../images/indexicon.png')no-repeat -216px -266px;
+}
